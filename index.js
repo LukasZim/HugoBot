@@ -14,15 +14,15 @@ bot.on("ready", async () => {
     //console.log(bot.guilds.cache.first().members.cache.get(targetid).setNickname("nicht"));
     //console.log(bot.users.fetch(targetid));
 
-    setInterval(async () => {
-        target = bot.guilds.cache.array()[0].members.cache.array().find(function(element){
-            return element.id == 321034764268077066;
-        });
-        var begin = target.nickname.slice(0, 1);
-        var end = target.nickname.slice(1);
-        target.setNickname(end + begin);
-        console.log(target.nickname);
-    }, 1000 * 60* 30);
+    // setInterval(async () => {
+    //     target = bot.guilds.cache.array()[0].members.cache.array().find(function(element){
+    //         return element.id == 321034764268077066;
+    //     });
+    //     var begin = target.nickname.slice(0, 1);
+    //     var end = target.nickname.slice(1);
+    //     target.setNickname(end + begin);
+    //     console.log(target.nickname);
+    // }, 1000 * 60* 30);
 
     target = bot.users.fetch(targetid);
 });
@@ -55,7 +55,7 @@ bot.on("message", async message => {
 
     if(message.author.id == 321034764268077066){
         message.channel.send("goedenmorgen alterego, ZIJN.WE.ER.KLAAR.VOOR>?\n AJAJ KAPITIJN");
-        bot.user.setUsername(message.member.nickname);
+        //bot.user.setUsername(message.member.nickname);
     }
 });
 
