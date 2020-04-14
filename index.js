@@ -24,7 +24,7 @@ bot.on("ready", async () => {
     //     console.log(target.nickname);
     // }, 1000 * 60* 30);
 
-    target = bot.users.fetch(targetid);
+    //target = bot.users.fetch(targetid);
 });
 
 
