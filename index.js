@@ -10,6 +10,7 @@ function channelIdChecker(id){
     if(id == 454340635374387234) return true; 
     if(id == 476181464057118742) return true;
     if(id == 695744351833423903) return true;
+    if(id == 601414098214846465) return true;
 
     return false;
 }
@@ -56,6 +57,10 @@ bot.on("message", async message => {
         console.log("test?");
         //console.log(message.member);
         message.member.setNickname(message.content.replace("changeNick ", ''));
+    }
+
+    if(message.content.toLowerCase().includes("gay")){
+        message.channel.send("( ͡° ͜ʖ ͡°)");
     }
 });
 
