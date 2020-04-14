@@ -54,7 +54,7 @@ bot.on("message", async message => {
     if(message.author.bot) return;
 
     if(message.author.id == 321034764268077066){
-        message.channel.send("goedenmorgen alterego, ZIJN.WE.ER.KLAAR.VOOR>?\n AJAJ KAPITIJN");
+        message.channel.send("goedenmorgen alterego, ZIJN.WE.ER.KLAAR.VOOR>?\nAJAJ KAPITIJN");
         //bot.user.setUsername(message.member.nickname);
     }
 });
