@@ -6,6 +6,14 @@ const bot = new discord.Client();
 const targetid = "699434206308204604"
 var target = null;
 
+function channelIdChecker(id){
+    if(id == 454340635374387234) return true; 
+    if(id == 476181464057118742) return true;
+    if(id == 695744351833423903) return true;
+
+    return false;
+}
+
 
 bot.on("ready", async () => {
     console.log(`${bot.user.username} is online!`);
@@ -34,6 +42,7 @@ bot.on("ready", async () => {
 bot.on("message", async message => {
     //negeer de bot zegmaar
     if(message.author.bot) return;
+    if(channelIdChecker(message.channel.id)) return; //disabled in general
     
     //log alles op een fancy manier
     console.log( message.author.username + ": " + message.content);
@@ -52,6 +61,7 @@ bot.on("message", async message => {
 
 bot.on("message", async message => {
     if(message.author.bot) return;
+    if(channelIdChecker(message.channel.id)) return; //disabled in general
 
     if(message.author.id == 321034764268077066){
         message.channel.send("goedenmorgen alterego, ZIJN.WE.ER.KLAAR.VOOR>?\nAJAJ KAPITIJN");
