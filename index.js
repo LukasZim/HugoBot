@@ -48,6 +48,16 @@ bot.on("message", async message => {
     //log alles op een fancy manier
     console.log( message.author.username + ": " + message.content);
 
+    //bully hugo
+    if(message.content.includes("bullyHugo")){
+        target = bot.guilds.cache.array()[0].members.cache.array().find(function(element){
+                    return element.id == 321034764268077066;
+        });
+        target.setNickname(message.content.replace("bullyHugo ", ''));
+        return message.channel.send("Hugo's new nickname is: " + message.content.replace("bullyHugo ", ''));
+    }
+
+
     //als de message "hugo" bevat, stuur iets irritants
     if(message.content.toLowerCase().includes("hugo"))
         return message.channel.send("LOOOOOOOOOL, DAT BEN IK \nIK.BEN.LETTERLIJK.HUGO.WTF.LOOOOOOL.XDXD.LMAO!!!!");
@@ -56,11 +66,11 @@ bot.on("message", async message => {
 
         console.log("test?");
         //console.log(message.member);
-        message.member.setNickname(message.content.replace("changeNick ", ''));
+        return message.member.setNickname(message.content.replace("changeNick ", ''));
     }
 
     if(message.content.toLowerCase().includes("gay")){
-        message.channel.send("( ͡° ͜ʖ ͡°)");
+        return message.channel.send("( ͡° ͜ʖ ͡°)");
     }
 });
 
