@@ -1,7 +1,38 @@
 const discord = require("discord.js");
 const botConfig = require("./botconfig.json");
 
+const fs = require("fs");
+
 const bot = new discord.Client();
+bot.commands = new discord.Collection();
+
+fs.readdir("./commands", (err, files) => {
+    
+    if(err) console.log(err);
+    
+    var jsFiles = files.filter(f => f.split(".").pop() === "js");
+
+    if(jsFiles.length <= 0){
+        console.log("welke files denk jij hier te vinden?");
+        return;
+    }
+
+    jsFiles.forEach((f,i) => {
+
+        var fileGet = require(`./commands/${f}`);
+        console.log(`De file ${f} is geladen`);
+
+        bot.commands.set(fileGet.help.name, fileGet);
+    });
+});
+
+bot.on("message", async()=>{
+    var messageArray = message.content.split(" ");
+    var command = messageArray[0];
+    var arguments = messageArray.slice(1);
+    var commands = bot.commands.get(command);
+    if(commands) commands.run(bot, message, arguments);
+});
 
 const targetid = "699434206308204604"
 var target = null;
@@ -14,6 +45,18 @@ function channelIdChecker(id){
 
     return false;
 }
+
+bot.once("ready", () => {
+    console.log("Im ready to ruuuuumbleeeeeeeeeeeee");
+});
+
+bot.once("reconnecting", ()=> {
+    console.log("Im reconnecting, valve pls fix");
+});
+
+bot.once("disconnect", ()=>{
+    console.log("Aaaaaaaaaaaand im gone...");
+})
 
 function getRandomInt(n) {
     return Math.floor(Math.random() * n);
@@ -38,7 +81,7 @@ function shuffle(s) {
 
 bot.on("ready", async () => {
     console.log(`${bot.user.username} is online!`);
-    bot.user.setActivity("Hugo's Asshole", { type: "WATCHING" });
+    bot.user.setActivity("with Hugo's Nipples", { type: "PLAYING" });
     //console.log("all guilds below!!");
     //console.log(bot.guilds.cache.first().members.cache.get(targetid).setNickname("nicht"));
     //console.log(bot.users.fetch(targetid));
