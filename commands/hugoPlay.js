@@ -20,7 +20,7 @@ module.exports.run = async(bot, message, args) => {
 
     var options = { seek: 0, volume:1};
 
-    var voiceConnection = message.member.voice.channelID.join()
+    var voiceConnection = message.member.voice.channel.join()
     .then(voiceChannel => {
         var stream = ytdl(args[0], { filter: "audioonly"});
         var streamDispatch = voiceChannel.playStream(stream, options);
