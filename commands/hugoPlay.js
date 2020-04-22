@@ -8,20 +8,20 @@ module.exports.run = async (bot, message, args) => {
 
     if (!args[0]) return message.channel.send("Hugo wants an URL UWUWUWUWUWUWUWUUWUWUWUWUW\nkill me");
 
-    var validate = await ytdl.validateURL(args[0]);
+    //var validate = await ytdl.validateURL(args[0]);
 
-    if (!validate) return message.channel.send("Hugo needs an valid URL UWUWUWUWUUWWUUWUWUUW\nend my suffering....\nplease.");
+    //if (!validate) return message.channel.send("Hugo needs an valid URL UWUWUWUWUUWWUUWUWUUW\nend my suffering....\nplease.");
 
     //var info = await ytdl.getInfo(args[0]);
 
-    var options = { volume: 1 };
+    //var options = { volume: 1 };
 
     var voiceChannel = message.member.voice.channel;
 
     voiceChannel.join()
         .then(connection => {
             console.log("play ittttttttttttt");
-            //connection.play(ytdl('https://www.youtube.com/watch?v=ZlAU_w7-Xp8', { quality: 'highestaudio' }));
+            connection.play(ytdl('https://www.youtube.com/watch?v=ZlAU_w7-Xp8', { quality: 'highestaudio' }));
         });
 
     message.channel.send(`Hugo is now playing with his nipples AND\nuwuwuwu`);
