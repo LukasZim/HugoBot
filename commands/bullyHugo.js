@@ -1,5 +1,7 @@
 const discord = require("discord.js");
 
+
+
 module.exports.run = async (bot, message, args) => {
     var target = bot.guilds.cache.array()[0].members.cache.array().find(function (element) {
         return element.id == 321034764268077066;
@@ -11,3 +13,4 @@ module.exports.run = async (bot, message, args) => {
 module.exports.help = {
     name: "bullyHugo"
 }
+

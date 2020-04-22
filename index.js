@@ -109,12 +109,12 @@ bot.on("message", async message => {
 
     //randomize hugo's naam
     if(message.content.includes("randomHugo")){
-        target = bot.guilds.cache.array()[0].members.cache.array().find(function(element){
-            return element.id == 321034764268077066;
-        });
-        var newNick = shuffle(target.nickname);
-        target.setNickname(newNick);
-        return message.channel.send("Mijn username is nu: " + newNick);
+        // target = bot.guilds.cache.array()[0].members.cache.array().find(function(element){
+        //     return element.id == 321034764268077066;
+        // });
+        // var newNick = shuffle(target.nickname);
+        // target.setNickname(newNick);
+        // return message.channel.send("Mijn username is nu: " + newNick);
     }
 
 
