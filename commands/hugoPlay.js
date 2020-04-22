@@ -2,6 +2,7 @@ const discord = require("discord.js");
 const ytdl = require("ytdl-core");
 
 module.exports.run = async(bot, message, args) => {
+    console.log(message.member.voiceChannel);
     if(!message.member.voiceChannel) return message.channel.send("Hugo wants to see you are in a channel uWu");
 
     if(message.guild.me.voiceChannel) return message.channel.send("Hugo is already in another channel uWu xD LMAO\n:D:D:D:D:D");
