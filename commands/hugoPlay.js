@@ -5,7 +5,7 @@ module.exports.run = async(bot, message, args) => {
     console.log(message.member.voiceConnection);
     console.log(message.member.voiceChannel);
     console.log(message.member.voice.channelID);
-    console.error;
+    //console.error;
     if(message.member.voice.channelID == null) return message.channel.send("Hugo wants to see you are in a channel uWu");
 
     if(message.guild.me.voice.channelID) return message.channel.send("Hugo is already in another channel uWu xD LMAO\n:D:D:D:D:D");
