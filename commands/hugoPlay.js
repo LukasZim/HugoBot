@@ -20,7 +20,7 @@ module.exports.run = async (bot, message, args) => {
 
     voiceChannel.join()
         .then(connection =>{
-            console.log(info);
+            console.log("play ittttttttttttt");
             connection.play(ytdl(args[0], { quality: 'highestaudio'}));
         });
 
