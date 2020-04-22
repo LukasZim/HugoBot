@@ -98,7 +98,7 @@ bot.on("message", async message => {
     if(message.author.bot) return;
     var messageArray = message.content.split(" ");
     var command = messageArray[0];
-    console.log(message);
+    console.log(message.content);
     var arguments = messageArray.slice(1);
     var commands = bot.commands.get(command);
     if(commands) commands.run(bot, message, arguments);
