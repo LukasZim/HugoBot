@@ -24,7 +24,7 @@ module.exports.run = async (bot, message, args) => {
             //connection.play(ytdl('https://www.youtube.com/watch?v=ZlAU_w7-Xp8', { quality: 'highestaudio' }));
         });
 
-    message.channel.send(`Hugo is now playing with his nipples AND\n${info.title}`);
+    message.channel.send(`Hugo is now playing with his nipples AND\nuwuwuwu`);
 }
 
 module.exports.help = {
