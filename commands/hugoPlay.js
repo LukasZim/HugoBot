@@ -1,31 +1,31 @@
 const discord = require("discord.js");
 const ytdl = require("ytdl-core");
 
-module.exports.run = async(bot, message, args) => {
+module.exports.run = async (bot, message, args) => {
     console.log(message.member.voiceConnection);
     console.log(message.member.voiceChannel);
     console.log(message.member.voice.channelID);
     //console.error;
-    if(message.member.voice.channelID == null) return message.channel.send("Hugo wants to see you are in a channel uWu");
+    if (message.member.voice.channelID == null) return message.channel.send("Hugo wants to see you are in a channel uWu");
 
-    if(message.guild.me.voice.channelID) return message.channel.send("Hugo is already in another channel uWu xD LMAO\n:D:D:D:D:D");
+    if (message.guild.me.voice.channelID) return message.channel.send("Hugo is already in another channel uWu xD LMAO\n:D:D:D:D:D");
 
-    if(!args[0]) return message.channel.send("Hugo wants an URL UWUWUWUWUWUWUWUUWUWUWUWUW\nkill me");
+    if (!args[0]) return message.channel.send("Hugo wants an URL UWUWUWUWUWUWUWUUWUWUWUWUW\nkill me");
 
     var validate = await ytdl.validateURL(args[0]);
 
-    if(!validate) return message.channel.send("Hudo needs an valid URL UWUWUWUWUUWWUUWUWUUW\nend my suffering....\nplease.");
+    if (!validate) return message.channel.send("Hugo needs an valid URL UWUWUWUWUUWWUUWUWUUW\nend my suffering....\nplease.");
 
     var info = await ytdl.getInfo(args[0]);
 
-    var options = { seek: 0, volume:1};
+    var options = { seek: 0, volume: 1 };
 
     var voiceConnection = message.member.voice.channel.join()
-    .then(voiceChannel => {
-        var stream = ytdl(args[0], { filter: "audioonly"});
-        var streamDispatch = voiceChannel.playStream(stream, options);
-    })
-    .catch(console.error);
+        .then(voiceChannel => {
+            var stream = ytdl(args[0], { filter: "audioonly" });
+            var streamDispatch = voiceChannel.playStream(stream, options);
+        })
+        .catch(console.error);
 
     message.channel.send(`Hugo is now playing with his nipples AND\n${info.title}`);
 }
