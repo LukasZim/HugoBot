@@ -12,7 +12,7 @@ module.exports.run = async (bot, message, args) => {
 
     if (!validate) return message.channel.send("Hugo needs an valid URL UWUWUWUWUUWWUUWUWUUW\nend my suffering....\nplease.");
 
-    var info = await ytdl.getInfo(args[0]);
+    //var info = await ytdl.getInfo(args[0]);
 
     var options = { volume: 1 };
 

@@ -56,7 +56,7 @@ bot.on("message", async message => {
     if (channelIdChecker(message.channel.id)) return; //disabled in general
     var messageArray = message.content.split(" ");
     var command = messageArray[0];
-    console.log(message.content);
+    //console.log(message.content);
     var arguments = messageArray.slice(1);
     var commands = bot.commands.get(command);
     if (message.author.id == 321034764268077066) {
