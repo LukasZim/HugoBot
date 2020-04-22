@@ -19,9 +19,9 @@ module.exports.run = async (bot, message, args) => {
     var voiceChannel = message.member.voice.channel;
 
     voiceChannel.join()
-        .then(connection =>{
+        .then(connection => {
             console.log("play ittttttttttttt");
-            connection.play('https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3');
+            //connection.play(ytdl('https://www.youtube.com/watch?v=ZlAU_w7-Xp8', { quality: 'highestaudio' }));
         });
 
     message.channel.send(`Hugo is now playing with his nipples AND\n${info.title}`);
