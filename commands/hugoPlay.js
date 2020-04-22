@@ -21,11 +21,16 @@ module.exports.run = async (bot, message, args) => {
     var options = { seek: 0, volume: 1 };
 
     var voiceConnection = message.member.voice.channel.join()
-        .then(voiceChannel => {
-            var stream = ytdl(args[0], { filter: "audioonly" });
-            var streamDispatch = voiceChannel.playStream(stream, options);
-        })
-        .catch(console.error);
+        .then(connection => {
+            const url = ytdl(args.join(' '), { filter: 'audioonly' });
+
+            const dispatcher = connection.playStream(url);
+
+            message.delete();
+
+            message.channel.send('Now playing : ' + args);
+
+        }).catch(console.error);
 
     message.channel.send(`Hugo is now playing with his nipples AND\n${info.title}`);
 }
@@ -33,3 +38,4 @@ module.exports.run = async (bot, message, args) => {
 module.exports.help = {
     name: "hugoPlay"
 }
+
