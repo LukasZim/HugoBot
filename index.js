@@ -26,7 +26,7 @@ fs.readdir("./commands", (err, files) => {
     });
 });
 
-bot.on("message", async()=>{
+bot.on("message", async message => {
     var messageArray = message.content.split(" ");
     var command = messageArray[0];
     var arguments = messageArray.slice(1);
