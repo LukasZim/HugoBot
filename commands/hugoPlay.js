@@ -4,12 +4,11 @@ const ytdl = require("ytdl-core");
 module.exports.run = async(bot, message, args) => {
     console.log(message.member.voiceConnection);
     console.log(message.member.voiceChannel);
-    console.log(message.member);
     console.log(message.member.voice.channelID);
     console.error;
-    if(!message.member.voiceChannel) return message.channel.send("Hugo wants to see you are in a channel uWu");
+    if(message.member.voice.channelID == null) return message.channel.send("Hugo wants to see you are in a channel uWu");
 
-    if(message.guild.me.voiceChannel) return message.channel.send("Hugo is already in another channel uWu xD LMAO\n:D:D:D:D:D");
+    if(message.guild.me.voice.channelID) return message.channel.send("Hugo is already in another channel uWu xD LMAO\n:D:D:D:D:D");
 
     if(!args[0]) return message.channel.send("Hugo wants an URL UWUWUWUWUWUWUWUUWUWUWUWUW\nkill me");
 
@@ -21,7 +20,7 @@ module.exports.run = async(bot, message, args) => {
 
     var options = { seek: 0, volume:1};
 
-    var voiceConnection = message.member.voiceChannel.join()
+    var voiceConnection = message.member.voice.channelID.join()
     .then(voiceChannel => {
         var stream = ytdl(args[0], { filter: "audioonly"});
         var streamDispatch = voiceChannel.playStream(stream, options);
