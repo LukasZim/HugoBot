@@ -26,13 +26,7 @@ fs.readdir("./commands", (err, files) => {
     });
 });
 
-bot.on("message", async message => {
-    var messageArray = message.content.split(" ");
-    var command = messageArray[0];
-    var arguments = messageArray.slice(1);
-    var commands = bot.commands.get(command);
-    if(commands) commands.run(bot, message, arguments);
-});
+
 
 const targetid = "699434206308204604"
 var target = null;
@@ -100,7 +94,14 @@ bot.on("ready", async () => {
 });
 
 
-
+bot.on("message", async message => {
+    if(message.author.bot) return;
+    var messageArray = message.content.split(" ");
+    var command = messageArray[0];
+    var arguments = messageArray.slice(1);
+    var commands = bot.commands.get(command);
+    if(commands) commands.run(bot, message, arguments);
+});
 
 //stuur iets irritants als een message hugo bevat
 bot.on("message", async message => {
