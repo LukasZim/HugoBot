@@ -8,7 +8,7 @@ module.exports.run = async(bot, message, args) => {
     console.error;
     if(message.member.voice.channelID == null) return message.channel.send("Hugo wants to see you are in a channel uWu");
 
-    if(message.guild.me.voice.channelID != message.member.voice.ChannelID) return message.channel.send("Hugo is already in another channel uWu xD LMAO\n:D:D:D:D:D");
+    if(message.guild.me.voice.channelID) return message.channel.send("Hugo is already in another channel uWu xD LMAO\n:D:D:D:D:D");
 
     if(!args[0]) return message.channel.send("Hugo wants an URL UWUWUWUWUWUWUWUUWUWUWUWUW\nkill me");
 
