@@ -28,14 +28,7 @@ fs.readdir("./commands", (err, files) => {
 
 
 
-function channelIdChecker(id) {
-    if (id == 454340635374387234) return true;
-    if (id == 476181464057118742) return true;
-    if (id == 695744351833423903) return true;
-    if (id == 601414098214846465) return true;
 
-    return false;
-}
 
 bot.once("ready", () => {
     console.log("Im ready to ruuuuumbleeeeeeeeeeeee");
@@ -81,34 +74,15 @@ bot.on("message", async message => {
     }
 });
 
-//stuur iets irritants als een message hugo bevat
-bot.on("message", async message => {
-    //negeer de bot zegmaar
-    if (message.author.bot) return;
-    if (channelIdChecker(message.channel.id)) return; //disabled in general
-
-    //log alles op een fancy manier
-    console.log(message.author.username + ": " + message.content);
-
-    if (message.content.includes('changeNick')) {
-
-        // console.log("test?");
-        // //console.log(message.member);
-        // return message.member.setNickname(message.content.replace("changeNick ", ''));
-    }
 
 
-});
+function channelIdChecker(id) {
+    if (id == 454340635374387234) return true;
+    if (id == 476181464057118742) return true;
+    if (id == 695744351833423903) return true;
+    if (id == 601414098214846465) return true;
 
-bot.on("message", async message => {
-    if (message.author.bot) return;
-    if (channelIdChecker(message.channel.id)) return; //disabled in general
-
-    if (message.author.id == 321034764268077066) {
-        message.channel.send("goedenmorgen alterego, ZIJN.WE.ER.KLAAR.VOOR>?\nAJAJ KAPITIJN");
-    }
-});
-
-
+    return false;
+}
 
 bot.login(process.env.token);
