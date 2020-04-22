@@ -21,7 +21,7 @@ module.exports.run = async (bot, message, args) => {
     voiceChannel.join()
         .then(connection =>{
             console.log("play ittttttttttttt");
-            connection.play(ytdl(args[0], { quality: 'highestaudio'}));
+            //connection.play(ytdl(args[0], { quality: 'highestaudio'}));
         });
 
     message.channel.send(`Hugo is now playing with his nipples AND\n${info.title}`);
