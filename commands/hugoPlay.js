@@ -2,8 +2,7 @@ const discord = require("discord.js");
 const ytdl = require("ytdl-core");
 
 module.exports.run = async (bot, message, args) => {
-    console.log(message.member.voiceConnection);
-    console.log(message.member.voiceChannel);
+    console.log(message.member.voice.Connection);
     console.log(message.member.voice.channelID);
     //console.error;
     if (message.member.voice.channelID == null) return message.channel.send("Hugo wants to see you are in a channel uWu");
@@ -20,9 +19,11 @@ module.exports.run = async (bot, message, args) => {
 
     var options = { seek: 0, volume: 1 };
 
-    var voiceConnection = message.member.voice.channel.join()
+    var voiceChannel = message.member.voice.channel;
+
+    var voiceConnection = voiceChannel.join()
         .then(connection =>{
-            console.log(connection);
+            connection.play(ytdl(args[0], { quality: 'highestaudio'}))
         }).catch(console.error);
 
     message.channel.send(`Hugo is now playing with his nipples AND\n${info.title}`);
