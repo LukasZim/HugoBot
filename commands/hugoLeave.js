@@ -9,3 +9,7 @@ module.exports.run = async(bot, message, args) => {
 
     message.channel.send("Later bitch");
 }
+
+module.exports.help = {
+    name: "hugoLeave"
+}
