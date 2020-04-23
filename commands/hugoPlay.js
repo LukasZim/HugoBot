@@ -71,7 +71,6 @@ function Finish(bot, ops, dispatcher){
         Play(bot, ops, fetchedData);
     } else {
         ops.active.delete(dispatcher.guildID);
-        console.log(bot.guilds);
 
         var voiceChannel = bot.guilds.cache.get(dispatcher.guildID).me.voice.channel;
 
