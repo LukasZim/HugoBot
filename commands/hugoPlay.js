@@ -16,7 +16,7 @@ module.exports.run = async (bot, message, args) => {
 
     let connection = await message.member.voice.channel.join();
 
-    let dispatcher = await connection.play(ytdl(args[0], {filter: 'audioonly'}));
+    //let dispatcher = await connection.play(ytdl(args[0], {filter: 'audioonly'}));
 
     message.channel.send(`Hugo is now playing with his nipples AND\nuwuwuwu`);
 }
