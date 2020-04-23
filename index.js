@@ -70,7 +70,7 @@ bot.on("message", async message => {
         message.channel.send("goedenmorgen alterego, ZIJN.WE.ER.KLAAR.VOOR>?\nAJAJ KAPITIJN");
     }
     if (commands) {
-        commands.run(bot, message, arguments, active);
+        commands.run(bot, message, arguments, options);
     } else {
         //als de message "hugo" bevat, stuur iets irritants
         if (message.content.toLowerCase().includes("hugo"))
