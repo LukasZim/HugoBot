@@ -7,6 +7,9 @@ module.exports.run = async(bot, message, args, options) => {
     console.log(typeof options.active.get(message.guild.id).queue)
     //console.log(textMessage);
     console.log(options.active.get(message.guild.id).queue);
+    for(i = 0; i < options.active.get(message.guild.id).queue.length; i++){
+        console.log(options.active.get(message.guild.id).queue[i]);
+    }
     //message.channel.send(textMessage);
 }
 
