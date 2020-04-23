@@ -17,5 +17,5 @@ module.exports.run = async(bot, message, args, options) => {
 }
 
 module.exports.help = {
-    name: "showQueue"
+    name: "hugoQueue"
 }
