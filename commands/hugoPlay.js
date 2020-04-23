@@ -72,7 +72,7 @@ function Finish(bot, ops, dispatcher){
     } else {
         options.active.delete(dispatcher.guildID);
 
-        var channel = bot.guilds.get(dispatcher.guildID).me.voice.channel;
+        var voiceChannel = bot.guilds.get(dispatcher.guildID).me.voice.channel;
 
         if(voiceChannel) voiceChannel.leave();
     }
