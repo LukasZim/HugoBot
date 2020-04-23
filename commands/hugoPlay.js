@@ -70,7 +70,7 @@ function Finish(bot, ops, dispatcher){
         ops.active.set(dispatcher.guildID, fetchedData);
         Play(bot, ops, fetchedData);
     } else {
-        options.active.delete(dispatcher.guildID);
+        ops.active.delete(dispatcher.guildID);
 
         var voiceChannel = bot.guilds.get(dispatcher.guildID).me.voice.channel;
 
