@@ -56,7 +56,7 @@ async function Play(bot, options, data){
     data.dispatcher.guildID = data.guildID;
 
     data.dispatcher.on('finish', ()=>{
-        Finish(bot, options, this);
+        Finish(bot, options, data.dispatcher);
     });
 }
 
