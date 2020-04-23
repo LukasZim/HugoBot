@@ -18,7 +18,7 @@ module.exports.run = async (bot, message, args) => {
 
     const dispatcher = connection.play(ytdl(args[0], { filter: 'audioonly' }));
 
-    dispatcher.setVolume(0.5);
+    dispatcher.setVolume(0.3);
 
     dispatcher.on('finish', ()=>{
         console.log("im donzo");
