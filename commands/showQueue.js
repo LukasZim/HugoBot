@@ -8,7 +8,10 @@ module.exports.run = async(bot, message, args, options) => {
     //console.log(textMessage);
     //console.log(options.active.get(message.guild.id).queue);
     for(i = 0; i < options.active.get(message.guild.id).queue.length; i++){
-        textMessage = textMessage + i + " : " + options.active.get(message.guild.id).queue[i].songTitle + "\n";
+        textMessage = textMessage + (1 + i) + " : " + options.active.get(message.guild.id).queue[i].songTitle + "\n";
+        if(i == 10 && options.active.get(message.guild.id).queue.length > 10){
+            textMessage = textMessage + "there are " + (options.active.get(message.guild.id).queue.length - 10) + " more songs";
+        }
     }
     message.channel.send(textMessage);
 }
