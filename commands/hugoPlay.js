@@ -25,7 +25,7 @@ module.exports.run = async (bot, message, args, options) => {
     data.queue.push({
         songTitle: info.title,
         user: message.author.tag,
-        url = args[0],
+        url: args[0],
         channel: message.channel.id
     });
 
