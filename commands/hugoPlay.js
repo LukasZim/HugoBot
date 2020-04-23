@@ -16,7 +16,7 @@ module.exports.run = async (bot, message, args) => {
 
     let connection = await message.member.voice.channel.join();
 
-    const dispatcher = connection.play(ytdl('https://www.youtube.com/watch?v=ZlAU_w7-Xp8', { filter: 'audioonly' }));
+    const dispatcher = connection.play(ytdl(args[0], { filter: 'audioonly' }));
 
     dispatcher.setVolume(0.5);
 
