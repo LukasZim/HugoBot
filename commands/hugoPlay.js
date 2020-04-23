@@ -49,7 +49,7 @@ module.exports.run = async (bot, message, args, options) => {
 }
 
 async function Play(bot, options, data){
-    bot.channels.get(data.queue[0].channel).send(`Now playing: ${data.queue[0].title}\nRequested by: ${data.queue[0].user}`)
+    //bot.channels.get(data.queue[0].channel).send(`Now playing: ${data.queue[0].title}\nRequested by: ${data.queue[0].user}`)
     var options = { seek: 2, volume: 1, bitrate: 128000};
 
     data.dispatcher = await data.connection.play(ytdl(data.queue[0].url, {filter: "audioonly"}), options);
