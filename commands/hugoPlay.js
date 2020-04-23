@@ -24,7 +24,7 @@ module.exports.run = async (bot, message, args) => {
         console.log("im donzo");
     });
 
-    message.channel.send(`Hugo is now playing with his nipples AND\nuwuwuwu`);
+    message.channel.send(`Hugo is now playing with his nipples AND ${info.title}\nuwuwuwu`);
 }
 
 module.exports.help = {
