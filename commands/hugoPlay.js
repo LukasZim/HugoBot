@@ -62,7 +62,7 @@ async function Play(bot, options, data){
 
 function Finish(bot, ops, dispatcher){
 
-    var fetchedData = options.active.get(dispatcher.guildID);
+    var fetchedData = ops.active.get(dispatcher.guildID);
 
     fetchedData.queue.shift();
 
