@@ -5,7 +5,7 @@ const Chuck = require('chucknorris-io'),
 module.exports.run = async(bot, message, args) => {
     client.getRandomJoke().then(function (response){
         console.log(response);
-        message.channel.send(response);
+        message.channel.send(response.value);
     })  .catch(function(error){
         console.log(error);
     })  
