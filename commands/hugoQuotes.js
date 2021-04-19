@@ -127,10 +127,31 @@ var quote11 = `Sorry to bother you milady, but id like to inform you that i just
 var quote13 = `ello my name is miguel and i am portugal a beautifulest country in Euro and I would just like say that I am inspire by you stream. I quit my job at the toothbrush factory and finally I am move from Bronze V to Bronze 3. I live with my mother and is the muchest good decision on my life. Please dont copy paste this message or you really are a sad`;
 
 
+var quote16 = `hai guys, im a 11 year old girl lives in bangeldesh my only dream is to visit summoners rift my jewish parents wont let me listen to darude sandstorm. please no copper pasta`
 
+var quote17 = `	  ⠄⠄⠄⠄⠄⢀⠁⣼⣿⢿⢰⡹⣿⣷⣹⡿⠶⠯⡃⣿⡇⠄⠄⠄⠄⠄⠄⠄⠄⠄ 
+⠄⠄⠄⠄⠄⢘⡤⠁⣿⡎⠘⠁⢩⡻⠷⣝⣴⣾⢦⡿⠳⢠⠂⠄⠄⠄⠄⠄⠄⠄ 
+⠄⢀⣠⠤⠄⠄⠄⠰⡙⠻⡼⣾⣿⣿⣿⣔⣸⣯⢨⡎⢀⢣⡣⡀⠄⡀⠄⠄⠄⠄ 
+⠄⣿⠄⠄⠄⠄⠄⡄⢸⢀⡐⣸⢿⣿⣽⣿⢿⠃⣿⠄⠄⢦⠻⣎⢦⣈⠢⡀⠄⠄ 
+⠄⢻⡀⠄⠄⡀⣸⡉⡞⣈⠄⣿⠁⣰⣯⣵⣿⡄⢏⠄⠁⡌⢧⡪⢻⣮⠳⣮⡀⠄ 
+⠄⠄⠈⠉⣩⣾⢣⢇⣥⣶⢆⡿⣰⣿⣿⣿⣿⡇⣰⣮⡻⣶⣶⣅⢣⢣⢣⠈⢳⡀ 
+⠄⠄⣠⢞⡵⡋⣦⣿⢟⡵⣫⣾⣿⣿⣿⣿⣿⣧⢷⡘⡻⢮⡻⣿⡇⢾⠸⠄⠄⡇ 
+⢀⡾⣱⢋⣼⢻⢸⣏⢯⣼⣿⣿⣿⣯⡻⣿⣿⢛⣌⢿⣮⣛⡚⠸⣇⠘⢘⣤⠞⠃ 
+⡾⠁⣇⢸⣿⡄⡇⢋⣾⣜⣿⣿⣿⣿⣷⣹⢱⣿⣿⣿⣾⣿⣿⣦⢸⢠⣿⠁⠄⠄ 
+⡇⠄⠹⡌⡸⢃⢋⣾⣿⣿⣿⣿⣿⣿⣿⡏⣿⣿⣿⣿⣿⡿⠿⢿⣧⠻⠣⣑⢦⡀ 
+⣧⠄⠄⠈⢽⡆⢸⢱⡟⢱⡜⣿⣿⣿⣿⢃⣿⣿⣿⣿⡏⣾⢙⡇⣿⢀⠱⢻⡆⢹ 
+⠙⢷⣤⣬⠎⢱⢌⢷⣽⣭⣾⣿⣿⣿⢏⣾⡜⣿⣿⣿⣿⣮⣭⣼⠟⡸⡄⣸⠃⡸ 
+⠄⣾⡶⢰⡸⡈⡾⣠⣍⢛⠛⣛⣫⣵⡿⠿⢿⣮⣙⣛⣛⡛⣛⢩⡆⡿⠄
+`
 
+var quote18 = `Simon: Hello and welcome back this is the topical discussion on the morning breeze on nbs television, my name is Simon Kangualiala. We bring in the studio this morning one of the gae rights activists: mr. - should i call you Mr??- Pepe Julien Onzima, thank you for coming in, good morning WHY ARE YOU GAEH?
 
+Pepe: Who says I'm geh?
 
+Simon: YOU are gae.`
+
+var quote19 = `
+Hey👋 ladies💁‍♀️ 📷 Would 😍 you 👈 like 👍 to 2️⃣ get 😮 rich 💰💰💰 by running 🏃‍♀️🏃‍♀️ your 👈 own business 👩‍💼💼 from home 🏡 with just ☝ your phone? 📱🤳 Well 🤷‍♀️ you can't. 😂 Get 👏 a 👏 real 👏 job 👏 you 👏 stupid 👏 cunt`;
 
 
 const responses = [quote,
@@ -147,5 +168,9 @@ const responses = [quote,
     quote12,
     quote13,
     quote14,
-    quote15
+    quote15,
+    quote16,
+    quote17,
+    quote18,
+    quote19
 ]
