@@ -2,7 +2,7 @@ const discord = require("discord.js");
 
 module.exports.run = async(bot, message, args) => {
     let arr = Array.from(bot.commands.values());
-    console.log(bot.commands.values());
+    // console.log(bot.commands.values());
     let str = "";
 
     const embed = new discord.MessageEmbed()

@@ -1,5 +1,6 @@
 /* eslint-disable no-undef */
 const discord = require("discord.js");
+// eslint-disable-next-line no-unused-vars
 const botConfig = require("./botconfig.json");
 const fs = require("fs");
 

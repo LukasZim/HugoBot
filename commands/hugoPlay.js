@@ -12,7 +12,7 @@ module.exports.run = async (bot, message, args, options) => {
 
     if (!validate) return message.channel.send("Hugo needs an valid URL UWUWUWUWUUWWUUWUWUUW\nend my suffering....\nplease.");
 
-    let info = await ytdl.getInfo(args[0]);
+    // let info = await ytdl.getInfo(args[0]);
 
     var data = options.active.get(message.guild.id) || {};
 
@@ -23,7 +23,7 @@ module.exports.run = async (bot, message, args, options) => {
     data.guildID = message.guild.id;
 
     data.queue.push({
-        songTitle: info.title,
+        // songTitle: info.title,
         user: message.author.tag,
         url: args[0],
         channel: message.channel.id
@@ -32,7 +32,7 @@ module.exports.run = async (bot, message, args, options) => {
     if(!data.dispatcher){
         Play(bot, options, data);
     } else {
-        message.channel.send(`Added to queue: ${info.title} \nAdded by : ${message.author.tag}`)
+        // message.channel.send(`Added to queue: ${info.title} \nAdded by : ${message.author.tag}`)
     }
 
     options.active.set(message.guild.id, data)
