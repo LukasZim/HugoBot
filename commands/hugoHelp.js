@@ -1,9 +1,9 @@
 const discord = require("discord.js");
 
-module.exports.run = async(bot, message, args) => {
+module.exports.run = async(bot, message) => {
     let arr = Array.from(bot.commands.values());
     // console.log(bot.commands.values());
-    let str = "";
+    // let str = "";
 
     const embed = new discord.MessageEmbed()
         .setColor("#0099ff")
@@ -14,7 +14,7 @@ module.exports.run = async(bot, message, args) => {
         
     for (let i = 0; i < arr.length; i++) {
         embed.addField(arr[i].help.name, arr[i].help.description, false)
-        str += arr[i].help.name + ": " + arr[i].help.description + "\n";
+        // str += arr[i].help.name + ": " + arr[i].help.description + "\n";
     }
     message.channel.send(embed)
 }
