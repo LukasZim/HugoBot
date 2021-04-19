@@ -80,6 +80,7 @@ function Finish(bot, ops, dispatcher){
 }
 
 module.exports.help = {
-    name: "hugoPlay"
+    name: "hugoPlay",
+    description: "hugobot music command, play a song by giving a yt link"
 }
 

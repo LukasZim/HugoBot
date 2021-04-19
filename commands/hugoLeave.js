@@ -11,5 +11,6 @@ module.exports.run = async(bot, message, args) => {
 }
 
 module.exports.help = {
-    name: "hugoLeave"
+    name: "hugoLeave",
+    description: "hugobot music command, let hugo leave the channel he is currently in"
 }

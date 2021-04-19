@@ -13,5 +13,6 @@ module.exports.run = async(bot, message, args, options) => {
 }
 
 module.exports.help = {
-    name: "hugoQueue"
+    name: "hugoQueue",
+    description: "hugobot music command, shows te current (scuffed) queue"
 }

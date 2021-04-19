@@ -12,5 +12,6 @@ module.exports.run = async(bot, message, args, options) => {
 }
 
 module.exports.help = {
-    name: "hugoSkip"
+    name: "hugoSkip",
+    description: "hugobot music command, skips the current song (hopefully)"
 }

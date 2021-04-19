@@ -10,7 +10,8 @@ module.exports.run = async(bot, message, args) => {
 }
 
 module.exports.help = {
-    name: "randomHugo"
+    name: "randomHugo",
+    description: "randomizes hugo's name, by shuffling all characters in a random order"
 }
 
 function getRandomInt(n) {

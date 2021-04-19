@@ -12,5 +12,6 @@ module.exports.run = async(bot, message, args) => {
 }
 
 module.exports.help = {
-    name: "chuck"
+    name: "chuck",
+    description: "gives you a wonderfull piece of knowledge from our lord and saviour chuck norris"
 }
