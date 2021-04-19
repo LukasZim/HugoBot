@@ -4,7 +4,8 @@ module.exports.run = async(bot, message, args) => {
     var target = bot.guilds.cache.array()[0].members.cache.array().find(function(element){
         return element.id == 321034764268077066;
     });
-    console.log(target);
+    console.log(bot.guilds.cache);
+    console.log(bot.users.fetch(321034764268077066))
     var newNick = shuffle(target.nickname);
     target.setNickname(newNick);
     return message.channel.send("Mijn username is nu: " + newNick);
