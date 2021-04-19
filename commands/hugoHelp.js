@@ -5,10 +5,7 @@ module.exports.run = async(bot, message, args) => {
     console.log(bot.commands.values());
     let str = "";
     let fields = []
-    for (let i = 0; i < arr.length; i++) {
-        fields.add({name: arr[i].help.name, value: arr[i].help.description})
-        str += arr[i].help.name + ": " + arr[i].help.description + "\n";
-    }
+
     const embed = new discord.MessageEmbed()
         .setColor("#0099ff")
         .setTitle("All commands I can pull from my Nipples!!")
@@ -18,6 +15,10 @@ module.exports.run = async(bot, message, args) => {
         .addFields(
             fields
         ).setFooter("that's all folks", 'https://pbs.twimg.com/profile_images/464788131967807488/1tEzXaF8.jpeg')
+    for (let i = 0; i < arr.length; i++) {
+        embed.addField({name: arr[i].help.name, value: arr[i].help.description})
+        str += arr[i].help.name + ": " + arr[i].help.description + "\n";
+    }
     message.channel.send(embed + str)
 }
 
