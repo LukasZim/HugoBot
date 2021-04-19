@@ -6,6 +6,7 @@ module.exports.run = async(bot, message, args) => {
     });
     // console.log(bot.guilds.cache);
     const hug = async id => bot.users.fetch(id)
+    console.log("target " + target);
     console.log("1 " + await hug(321034764268077066));
     console.log("2 " +await message.guild.members.fetch(321034764268077066));
     console.log("3 " + message.guild.members.get(321034764268077066));
