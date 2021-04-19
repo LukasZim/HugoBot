@@ -13,7 +13,7 @@ module.exports.run = async(bot, message, args) => {
     // console.log("3 " + message.guild.members.cache.get("321034764268077066"));
     // console.log(message.guild.members.cache.get("321034764268077066"));
     // console.log(discord.users.get("321034764268077066"));
-    console.log(message.guild.members.fetch("321034764268077066"));
+    message.guild.members.fetch("321034764268077066").then(x => console.log(x));
     const hugo = await hug("321034764268077066");
     console.log(hugo);
     var newNick = shuffle(hugo.nickname);
