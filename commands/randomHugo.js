@@ -7,8 +7,10 @@ module.exports.run = async(bot, message, args) => {
     // console.log(bot.guilds.cache);
     const hug = async id => bot.users.fetch(id)
     console.log(hug(321034764268077066));
-    var newNick = shuffle(target.nickname);
-    target.setNickname(newNick);
+    const hugo = hug(321034764268077066);
+    console.log(hugo);
+    var newNick = shuffle(hugo.nickname);
+    hugo.setNickname(newNick);
     return message.channel.send("Mijn username is nu: " + newNick);
 }
 
