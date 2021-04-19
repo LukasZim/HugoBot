@@ -9,7 +9,7 @@ module.exports.run = async(bot, message, args) => {
         .setColor("#0099ff")
         .setTitle("All commands I can pull from my Nipples!!")
         // .setURL("https://pornhub.com/gayporn")
-        // .setAuthor("Hugo de Heer bot", "https://www.facebook.com/hugo.deheer.7", "https://pornhub.com/gayporn")
+        .setAuthor("Hugo de Heer bot", "../hans.jpeg", "https://www.facebook.com/hugo.deheer.7")
         // .addThumbnail('https://pbs.twimg.com/profile_images/464788131967807488/1tEzXaF8.jpeg')
         
     for (let i = 0; i < arr.length; i++) {
