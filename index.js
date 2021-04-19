@@ -69,7 +69,7 @@ const responses =   ["goedenmorgen alterego, ZIJN.WE.ER.KLAAR.VOOR>?\nAJAJ KAPIT
 
 
 bot.on("message", async message => {
-    if (message.author.bot) {
+    if (message.author.bot && message.author.id != 699408178605064292) {
         message.channel.send("houd je kk bek tering bot, hopelijk sterf je aan parkinsons")
         return;
     }
