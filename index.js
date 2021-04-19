@@ -22,7 +22,7 @@ fs.readdir("./commands", (err, files) => {
 
         var fileGet = require(`./commands/${f}`);
         console.log(`De file ${f} is geladen`);
-
+        console.log(f + " and i: " + i)
         bot.commands.set(fileGet.help.name, fileGet);
     });
 });
