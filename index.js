@@ -73,12 +73,15 @@ bot.on("message", async message => {
         message.channel.send("houd je kk bek tering bot, hopelijk sterf je aan parkinsons")
         return;
     }
-    if (channelIdChecker(message.channel.id)) {
-        let rand = Math.floor(Math.random() * 5)
+    if (message.author.id == 321034764268077066) {
+        let rand = Math.floor(Math.random() * 5)    // 20 % chance to respond to our boi
         if(rand == 0){
             // do respond to hugo
             respondToHugo(message);
         }
+    }
+    if (channelIdChecker(message.channel.id)) {
+
 
         return;
     } //disabled in general
@@ -92,9 +95,7 @@ bot.on("message", async message => {
         active: active
     }
 
-    if (message.author.id == 321034764268077066) {
-        message.channel.send("goedenmorgen alterego, ZIJN.WE.ER.KLAAR.VOOR>?\nAJAJ KAPITIJN");
-    }
+
     if (commands) {
         commands.run(bot, message, arguments, options);
     } else {
