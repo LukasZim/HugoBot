@@ -2,7 +2,7 @@ const discord = require("discord.js");
 
 module.exports.run = async(bot, message, args) => {
     let arr = Array.from(bot.commands.keys());
-    console.log(arr);
+    console.log(bot.commands.values());
     message.channel.send(arr.join("\n"))
 }
 
