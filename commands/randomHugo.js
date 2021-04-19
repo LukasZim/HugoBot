@@ -1,9 +1,9 @@
 const discord = require("discord.js");
 
 module.exports.run = async(bot, message, args) => {
-    var target = bot.guilds.cache.array()[0].members.cache.array().find(function(element){
-        return element.id == 321034764268077066;
-    });
+    // var target = bot.guilds.cache.array()[0].members.cache.array().find(function(element){
+    //     return element.id == 321034764268077066;
+    // });
     // console.log(bot.guilds.cache);
     const hug = async id => bot.users.fetch(id)
     // console.log("target " + target);
