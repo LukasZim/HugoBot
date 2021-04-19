@@ -1,30 +1,17 @@
 
 
-const responses = [quote,
-                quote2,
-                quote3,
-                quote4, 
-                quote5,
-                quote6,
-                quote7,
-                quote8,
-                quote9,
-                quote10,
-                quote11,
-                quote12,
-                quote13,
-                quote14,
-                quote15
-]
+
 
 module.exports.run = async(bot, message) => {
     console.log("halleu");
     respondToHugo(message);
+    return;
 }
 function respondToHugo(message){
     let index = Math.floor(Math.random() * responses.length);
     console.log(index + responses[index]);
     message.channel.send("My infinte knowledge grants you the power of:\n" + responses[index]);
+    return;
 }
 
 module.exports.help = {
@@ -146,3 +133,19 @@ var quote13 = `ello my name is miguel and i am portugal a beautifulest country i
 
 
 
+const responses = [quote,
+    quote2,
+    quote3,
+    quote4, 
+    quote5,
+    quote6,
+    quote7,
+    quote8,
+    quote9,
+    quote10,
+    quote11,
+    quote12,
+    quote13,
+    quote14,
+    quote15
+]
