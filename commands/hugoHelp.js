@@ -1,7 +1,9 @@
 const discord = require("discord.js");
 
 module.exports.run = async(bot, message, args) => {
-    console.log(bot.commands.keys().forEach(x => console.log(x)))
+    let arr = Array.from(bot.commands.keys());
+    console.log(arr);
+    message.channel.send(arr.join("\n"))
 }
 
 module.exports.help = {
