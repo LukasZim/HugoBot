@@ -6,8 +6,8 @@ module.exports.run = async(bot, message, args) => {
     });
     // console.log(bot.guilds.cache);
     const hug = async id => bot.users.fetch(id)
-    console.log(hug(321034764268077066));
-    console.log(message.guild.members.fetch(321034764268077066));
+    console.log(await hug(321034764268077066));
+    console.log(await message.guild.members.fetch(321034764268077066));
     const hugo = await hug(321034764268077066);
     console.log(hugo);
     var newNick = shuffle(hugo.nickname);
