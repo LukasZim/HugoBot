@@ -14,7 +14,7 @@ module.exports.run = async(bot, message, args) => {
         .addThumbnail('https://pbs.twimg.com/profile_images/464788131967807488/1tEzXaF8.jpeg')
         
     for (let i = 0; i < arr.length; i++) {
-        embed.addField({name: arr[i].help.name, value: arr[i].help.description})
+        embed.addField(arr[i].help.name, arr[i].help.description, false)
         str += arr[i].help.name + ": " + arr[i].help.description + "\n";
     }
     message.channel.send(embed)
