@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 const discord = require("discord.js");
 const botConfig = require("./botconfig.json");
 const fs = require("fs");
@@ -18,7 +19,7 @@ fs.readdir("./commands", (err, files) => {
         return;
     }
 
-    jsFiles.forEach((f, i) => {
+    jsFiles.forEach((f) => {
 
         var fileGet = require(`./commands/${f}`);
         console.log(`De file ${f} is geladen`);
@@ -101,7 +102,7 @@ bot.on("message", async message => {
     var messageArray = message.content.split(" ");
     var command = messageArray[0];
     //console.log(message.content);
-    var arguments = messageArray.slice(1);
+    var botArguments = messageArray.slice(1);
     var commands = bot.commands.get(command);
 
     var options = {
@@ -110,7 +111,7 @@ bot.on("message", async message => {
 
 
     if (commands) {
-        commands.run(bot, message, arguments, options);
+        commands.run(bot, message, botArguments, options);
     } else {
         //als de message "hugo" bevat, stuur iets irritants
         if (message.content.toLowerCase().includes("hugo"))

@@ -19,5 +19,8 @@
     "chucknorris-io": "^1.0.5",
     "discord.js": "^12.1.1",
     "ytdl-core": "^2.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.24.0"
   }
 }
