@@ -1,4 +1,4 @@
-const discord = require("discord.js");
+const {discord} = require("discord.js");
 
 module.exports.run = async(bot, message, args) => {
     // var target = bot.guilds.cache.array()[0].members.cache.array().find(function(element){
@@ -11,7 +11,7 @@ module.exports.run = async(bot, message, args) => {
     // console.log("2 " +await message.guild.members.fetch(321034764268077066));
     // console.log("wut");
     // console.log("3 " + message.guild.members.cache.get("321034764268077066"));
-    console.log(message.guild)
+    console.log(message.guild.members);
     console.log(discord.users.get("321034764268077066"));
     
     const hugo = await hug("321034764268077066");
