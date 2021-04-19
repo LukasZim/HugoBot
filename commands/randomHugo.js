@@ -8,7 +8,8 @@ module.exports.run = async(bot, message, args) => {
     const hug = async id => bot.users.fetch(id)
     // console.log("target " + target);
     // console.log("1 " + await hug(321034764268077066));
-    console.log("2 " +await message.guild.members.fetch(321034764268077066));
+    // console.log("2 " +await message.guild.members.fetch(321034764268077066));
+    console.log("wut");
     console.log("3 " + message.guild.members.cache.get(321034764268077066));
     const hugo = await hug(321034764268077066);
     console.log(hugo);
