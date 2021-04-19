@@ -12,15 +12,7 @@ module.exports.run = async (bot, message, args, options) => {
 
     if (!validate) return message.channel.send("Hugo needs an valid URL UWUWUWUWUUWWUUWUWUUW\nend my suffering....\nplease.");
 
-    let info = "xd"
-    ytdl.getInfo(args[0],{downloadURL: true},
-        function(err, songInfo) {
-            if (err) throw err;
-            info = songInfo //you can store it here
-            console.log(info);
-        }
-    );
-    console.log(info);
+    let info = await ytdl.getInfo(args[0]);
 
     var data = options.active.get(message.guild.id) || {};
 
