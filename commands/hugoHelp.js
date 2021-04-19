@@ -1,11 +1,11 @@
 const discord = require("discord.js");
 
 module.exports.run = async(bot, message, args) => {
-    let arr = Array.from(bot.commands.keys());
+    let arr = Array.from(bot.commands.values());
     console.log(bot.commands.values());
     let str = "";
-    for (cur in Array.from(bot.commands.values())) {
-        str += cur.help.name + ": " + cur.help.description;
+    for (let i = 0; i < arr.length; i++) {
+        str += arr[i].help.name + ": " + arr[i].help.description;
     }
     message.channel.send(str)
 }
