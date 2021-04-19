@@ -12,9 +12,7 @@ module.exports.run = async(bot, message, args) => {
         .setURL("https://pornhub.com/gayporn")
         .setAuthor("Hugo de Heer bot", "https://www.facebook.com/hugo.deheer.7")
         .addThumbnail('https://pbs.twimg.com/profile_images/464788131967807488/1tEzXaF8.jpeg')
-        .addFields(
-            fields
-        ).setFooter("that's all folks", 'https://pbs.twimg.com/profile_images/464788131967807488/1tEzXaF8.jpeg')
+        .setFooter("that's all folks", 'https://pbs.twimg.com/profile_images/464788131967807488/1tEzXaF8.jpeg')
     for (let i = 0; i < arr.length; i++) {
         embed.addField({name: arr[i].help.name, value: arr[i].help.description})
         str += arr[i].help.name + ": " + arr[i].help.description + "\n";
