@@ -5,7 +5,7 @@ module.exports.run = async(bot, message, args) => {
     console.log(bot.commands.values());
     let str = "";
     for (let i = 0; i < arr.length; i++) {
-        str += arr[i].help.name + ": " + arr[i].help.description;
+        str += arr[i].help.name + ": " + arr[i].help.description + "\n";
     }
     message.channel.send(str)
 }
