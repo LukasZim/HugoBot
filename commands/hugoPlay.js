@@ -20,6 +20,7 @@ module.exports.run = async (bot, message, args, options) => {
             console.log(info);
         }
     );
+    console.log(info);
 
     var data = options.active.get(message.guild.id) || {};
 
