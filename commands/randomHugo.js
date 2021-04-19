@@ -11,9 +11,8 @@ module.exports.run = async(bot, message, args) => {
     // console.log("2 " +await message.guild.members.fetch(321034764268077066));
     // console.log("wut");
     // console.log("3 " + message.guild.members.cache.get("321034764268077066"));
-    // console.log("mem" + message.guild.members.get("321034764268077066"));
     console.log(message.guild)
-    console.log(bot.users.get("321034764268077066"));
+    console.log(discord.users.get("321034764268077066"));
     
     const hugo = await hug("321034764268077066");
     console.log(hugo);
