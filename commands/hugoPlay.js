@@ -16,7 +16,7 @@ module.exports.run = async (bot, message, args, options) => {
     ytdl.getInfo(args[0],{downloadURL: true},
         function(err, songInfo) {
             if (err) throw err;
-            info = songInfo.title //you can store it here
+            info = songInfo //you can store it here
             console.log(info);
         }
     );
