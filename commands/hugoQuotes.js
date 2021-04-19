@@ -12,15 +12,18 @@ var responses = [quote,
                 quote10,
                 quote11,
                 quote12,
-                quote13
+                quote13,
+                quote14,
+                quote15
 ]
 
 module.exports.run = async(bot, message) => {
     console.log("halleu");
-    message.channel.send(respondToHugo(message))
+    respondToHugo(message);
 }
 function respondToHugo(message){
     let index = Math.floor(Math.random() * responses.length);
+    console.log(responses[index]);
     message.channel.send("My infinte knowledge grants you the power of:\n" + responses[index]);
 }
 
@@ -28,6 +31,10 @@ module.exports.help = {
     name: "hugoQuote",
     description: "learn the secrets of hugo's infite knowledge"
 }
+
+var quote15 = `Hey riot I have a champion idea, im from brazil, the champion name is ''pedrinho'' the favela boy, when he uses his R he we'll be able to run so fast and steal other champions money pls no copy pastas`
+
+var quote14 = `Suddenly I woke up and a giant Ant was eating my ***, I was so scared and I cant move. After a while I liked it and went gay. Also reached Plastic V. Now I go to school and try to learn englando. (Never Copy / paste this.)`
 
 var quote2 = `
 ⢀⡴⠑⡄⠀⠀⠀⠀⠀⠀⠀⣀⣀⣤⣤⣤⣀⡀⠀⠀⠀⠀ 
