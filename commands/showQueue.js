@@ -1,7 +1,7 @@
 
 module.exports.run = async(bot, message, args, options) => {
     var textMessage = "";
-    if(!options || !options.active || !options.active.get(message.guild.id) || !options.active.get(message.guild.id).queue) return message.channel.send("Queue is empty!");
+    if(!options || !options.active || !options.active.get(message.guild.id) || !options.active.get(message.guild.id).queue) return message.channel.send("de queue is leeg jij kk mogolisch teringkind!");
     for(let i = 0; i < options.active.get(message.guild.id).queue.length; i++){
         textMessage = textMessage + (1 + i) + " : " + options.active.get(message.guild.id).queue[i].songTitle + "\n";
         if(i == 10 && options.active.get(message.guild.id).queue.length > 10){
