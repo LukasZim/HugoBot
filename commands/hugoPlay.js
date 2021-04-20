@@ -14,7 +14,7 @@ module.exports.run = async (bot, message, args, options) => {
     if (!validate) {
         // url = await ytdl.searchYouTubeAsync(args);
         let vids = await yts(args.join(" "));
-        console.log(vids.videos);
+        // console.log(vids.videos);
         url = vids.videos[0].url;
         validate = await ytdl.validateURL(url);
         if(!validate){
