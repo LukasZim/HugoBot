@@ -39,8 +39,8 @@ module.exports.run = async (bot, message, args, options) => {
         url: url,
         channel: message.channel.id
     });
-    console.log(data);
-    console.log(info.title);
+    // console.log(data);
+    // console.log(info.title);
 
     if(!data.dispatcher){
         Play(bot, options, data);
