@@ -276,6 +276,29 @@ I'm still in shock! Anyone else had similar experiences?`
 
 var quote33 = `My friend really wants to know where he can find a soft mommy dom gf milf porn video and he's been nagging me all day haha, does anyone know a porn video like this? Can you please post it down below? He really needs it, preferably with some role-playing, and he says he doesn't mind if there's feet involved. Thanks.`
 
+var quote34 = `Holy fucking shit. I want to bang the Minecraft Ender Dragon so goddamn bad. I can't stand it anymore. Every time I go to the End I get a massive erection. I've seen literally every rule 34 post there is of her online. My dreams are nothing but constant fucking sex with the Ender Dragon. I'm sick of waking up every morning with six nuts in my boxers and knowing that those are nuts that should've been busted inside of the Ender Dragon’s tight dragon pussy. I want her to have my mutant human/dragon babies. Fuck, my fucking mom caught me and I'm worried she's gonna take away my PC. I might not ever get to see the Ender Dragon again.`
+
+var quote35 = `dear gay people. how do you wipe your ass? i know this might sound dumb but do gay people wipe their ass the same way we do? i heard they like putting things in their ass so do they like get turned on when the toilet paper goes in? what about the poop? do they get turned in when they poop because it feels like a penis? they are both oblong cylinders afterall. but what if they are actually being better at wiping their ass because they have some sort of advanced technique that is straight people can’t use because it’s too gay. do they like wrap their finger in toilet paper and finger out all of the poop? i really hate wiping so maybe i could convert to gay to use these advanced techniques. what do you guys think? and if there is any homosexuals here please tell me how you wipe your ass while being gay.`
+
+var quote36 = `So yesterday at lunch, I was about to eat with my friends from band when I realized that there was an empty seat at a table with some of the popular kids. I decided to take advantage of this opportunity to troll them, and perhaps befriend some of them. I sat at their table, and right as I sat down, I noticed that one of the kids (who happened to be black) was sitting above a vent. I yelled "Black is sus! He's on top of a vent!!" Everyone at the table looked up at me, but no one laughed (they probably didn't get the reference). I decided that I would try to get them to be familiar with it, so I asked "Do to guys wanna play some Among Us???" They were all dead silent (honestly they just didn't know how fun of a game it was). I slapped the middle of our table (to mimick the "emergency meeting" feature in Among Us), and I screamed "EMERGENCY MEETING!!!" Again, none of them laughed. One of them looked at me and said "Can you please sit somewhere else?" At this point, I realized that I had to make them laugh quickly, or I would blow my chance with them. I made the widest grin I could possibly make (Trying to mimick the "When the imposter is sus" meme) and I said "When the impoter is sus". I then tried to make a face that resembled the "Flushed" emoji (as part of the meme). However, I don't think any of them understood the reference. I then pulled up the among us theme song on Youtube and played it on full blast. At this point, everyone at my table was asking for me to leave, and their friend came back, who regularly sat in the chair I was sitting in. I went back to sit with my friends from band. However, I will forever remember the time I trolled ALL of the popular kids in my grade.`
+
+var quote37 = `So today in school, my English teacher was having us do presentation in front of our class. For my presentation, I decided to troll my entire class by making my entire slideshow about the popular game, Among Us. I started off the presentation by showing the class the picture of the Among Us imposter wearing sneakers (it's a meme on google if you want to search for it). For some reason, no one laughed at the meme. My teacher told me "this isn't what your presentation is supposed to be about." I responded by yelling "THE TEACHER IS SUS I SAW HER VENT" and then naruto running around the room. Again, no one even giggled. I assume it's because it was forst bell and everyone was tired. My teacher said "Please sit down." But I wasn't about to give up. I made a last ditch effort to make everyone laugh. I started to beatbox the Among Us theme song trap remix. I was beatboxing it so well (i had practiced it at home), i was certain that everyone would burst out in laughter. Unfortunately, not a single person laughed. Everyone was staring at me, so I said "You guys are all sussy, I'm gonna eject you".
+
+Long story short, I ended up getting a bad grade on my presentation and I got a detention. However, it was worth it because I totally got to troll my entire class.`
+
+var quote38 = `Flying, and travel in general, is stressful. And want to know one of the best stress relievers? That's right, masturbation. So what if a person wants to relieve some of that tension by spanking the monkey or flicking the bean? There's nothing wrong with paddling the pink canoe or Jackin' the beanstalk. It's totally natural to give yourself a nice little under the pants handshake. We all need to visit the purple headed soldier from time to time. It's not hurting anyone so if it's not your forte, just put on your headphones and ignore the man next to you playing a solo on his skin flute. Society should be way more accepting of masturbation on airplanes.`
+
+var quote39 = `I know for a fact that I am Genghis Khans’ reincarnated spirit because of visions that I have, and dreams that I experience. I have a lot of evidence that I am Genghis Khan’s reincarnated spirit, and one of the most highly regarded spirit world connectors told me so. However, I’ve explained all the evidence to my boyfriend and he still refuses to accept the hard truth. He is not a believer and I have accepted that.
+
+However, it is now straining the relationship. Our different beliefs have caused us to be wary of each other. He says he still loves me but I wake up at night to him inspecting my feet to see if I really am the reincarnated spirit of Genghis Khan. He clearly doesn’t trust me and I’m not sure how to maintain that trust anymore. Any suggestions?`
+
+var quote40 = `So my "friend" has a small penis and was wondering what exactly is the cut-off point for having a micro-penis? My friend is far too terrified to Google image search this and I can't either for entirely different reasons. I feel bad for him because my penis is extremely large and very satisfying to women and definitely works perfectly all the time, so I wanted to help him answer this question. He says that if he's at least a little above the threshold it might make him feel better.
+
+Also, who is the piece of shit Doctor that coined the term "micro-penis" and why is it even considered a medical issue? Under what circumstances would a doctor even diagnose this issue? What does that conversation sound like? Is the doctor held responsible when the patient immediately jumps out of the nearest window upon receiving this diagnosis? These are all things my friend is curious about.
+
+Thank you for reading, and again, just to be clear,my penis is huge and wonderful and I definitely am not asking this question to regain at least a shred of confidence and self-esteem. And I absolutely do not need just this one small victory to continue getting out of bed in the morning.
+
+P. S. - obviously I'm asking this for myself and despite the tone of the post it is a serious concern of mine.`
 
 const responses = [quote,
     quote2,
@@ -309,5 +332,12 @@ const responses = [quote,
     quote30,
     quote31,
     quote32,
-    quote33
+    quote33,
+    quote34,
+    quote35,
+    quote36,
+    quote37,
+    quote38,
+    quote39,
+    quote40
 ]
