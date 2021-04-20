@@ -20,6 +20,7 @@ module.exports.run = async (bot, message, args, options) => {
         if(!validate){
             return message.channel.send("idfk what ur looooooooooooking foooooooooooooooor\nbuuuuuuuuuuuuuuuuuuuuut iiiiiiiiii caaaaaan't fiiiiiiiiiiind iiiiiiiiiit\nlumfaoxdxddxdxdxdx")
         }
+        message.channel.send(`found this link that will be played: ${url}`)
     }
     console.log(url);
     let info = await ytdl.getInfo(url);
