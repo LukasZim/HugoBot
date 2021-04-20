@@ -85,15 +85,27 @@ const responses =   ["goedenmorgen alterego, ZIJN.WE.ER.KLAAR.VOOR>?\nAJAJ KAPIT
 bot.on("message", async message => {
     if(message.author.id == 699408178605064292) return;
     if (message.author.bot && message.author.id != 699408178605064292) {
+        message.react('797108536726519828');
         message.channel.send("houd je kk bek tering bot, hopelijk sterf je aan parkinsons")
         return;
     }
-    if (message.author.id == 321034764268077066) {
+    if (message.author.id == 321034764268077066) {//hugo
+        message.react('783801537918926859');
         let rand = Math.floor(Math.random() * 5)    // 20 % chance to respond to our boi
         if(rand == 0){
             // do respond to hugo
             respondToHugo(message);
         }
+    } else if(message.author.id == 279652366675083264){// roman
+        message.react('553011880134705183');
+    } else if(message.author.id == 263082569598238720){// me
+        message.react('454386727667367937');
+    } else if(message.author.id == 190940343347183616){//han
+        message.react('462702817795112992');
+    } else if(message.author.id == 137268260667260928){//ryan
+        message.react('462703751078084610');
+    } else {
+        message.react('612706488192073778');
     }
     if (channelIdChecker(message.channel.id)) {
 
