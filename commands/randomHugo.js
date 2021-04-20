@@ -22,7 +22,7 @@ module.exports.run = async(bot, message) => {
 }
 
 module.exports.help = {
-    name: "randomHugo",
+    name: "hugoRandom",
     description: "randomizes hugo's name, by shuffling all characters in a random order"
 }
 

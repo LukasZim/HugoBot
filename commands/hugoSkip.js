@@ -7,7 +7,7 @@ module.exports.run = async(bot, message, args, options) => {
     var data = options.active.get(message.guild.id);
     var queue = data.queue;
     if(!data.dispatcher) return message.channel.send("No song playing");
-    if(!(message.member.voice.channel.id == bot.guilds.cache.get(data.dispatcher.guildID).me.voice.channel.id)) return message.channel.send("Not in my channel");
+    if(!(message.member.voice.channel.id == bot.guilds.cache.get(data.dispatcher.guildID).me.voice.channel.id)) return message.channel.send("GET OVER HERE");
     data.dispatcher.end();
 }
 

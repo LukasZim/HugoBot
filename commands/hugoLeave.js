@@ -7,7 +7,8 @@ module.exports.run = async(bot, message, args, options) => {
 
     message.guild.me.voice.channel.leave();
 
-    var data = options.active.get(message.guild.id).queue = [];
+    options.active.get(message.guild.id).queue = [];
+    options.active.get(message.guild.id).connection = false;
     // data.queue = [];
     console.log(options);
 
