@@ -9,7 +9,7 @@ module.exports.run = async(bot, message, args) => {
     ctx.drawImage(background, 0, 0, canvas.width, canvas.height);
     
     ctx.font = applyText(canvas,args.join(" "));
-	ctx.fillStyle = '#ffffff';
+	ctx.fillStyle = '#800080';
 	ctx.fillText(args.join(' '), canvas.width / 1.5, canvas.height / 3.8);
     const attachment = new Discord.MessageAttachment(canvas.toBuffer(), 'hugoSmoel.png')
     message.channel.send(`Im proud you are this retarded!\nHowever you are no match for me:`, attachment);
