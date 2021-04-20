@@ -7,8 +7,8 @@ module.exports.run = async(bot, message, args, options) => {
 
     message.guild.me.voice.channel.leave();
 
-    var data = options.active.get(message.guild.id)
-    data.queue = [];
+    var data = options.active.get(message.guild.id).queue = [];
+    // data.queue = [];
     console.log(options);
 
     message.channel.send("Later bitch");
