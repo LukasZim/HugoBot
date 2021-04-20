@@ -5,7 +5,7 @@ module.exports.run = async(bot, message, args) => {
     console.log("halleu");
     const canvas = Canvas.createCanvas(700, 250);
     const ctx = canvas.getContext('2d');
-    const background = await Canvas.loadImage('./hugoSmoel.png');
+    const background = await Canvas.loadImage('./hans.png');
     ctx.drawImage(background, 0, 0, canvas.width, canvas.height);
     applyText(canvas, args.join(" "));
     const attachment = new Discord.MessageAttachment(canvas.toBuffer(), 'hugoSmoel.png')
@@ -29,6 +29,6 @@ const applyText = (canvas, text) => {
 };
 
 module.exports.help = {
-    name: "hugoFace",
-    description: "but text on hugo's face like this: hugoFace <text>"
+    name: "hugoSmikkel",
+    description: "but text on lukas' face like this: hugoSmikkel <text>"
 }
