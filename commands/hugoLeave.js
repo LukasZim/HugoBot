@@ -9,6 +9,7 @@ module.exports.run = async(bot, message, args, options) => {
 
     options.active.get(message.guild.id).queue = [];
     options.active.get(message.guild.id).connection = false;
+    options.active.get(message.guild.id).dispatcher.end();
     // data.queue = [];
     console.log(options);
 
