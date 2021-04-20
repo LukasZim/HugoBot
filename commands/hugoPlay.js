@@ -5,14 +5,17 @@ module.exports.run = async (bot, message, args, options) => {
     if (message.member.voice.channelID == null) return message.channel.send("Hugo wants to see you are in a channel uWu");
 
     //if (message.guild.me.voice.channelID) return message.channel.send("Hugo is already in another channel uWu xD LMAO\n:D:D:D:D:D");
+    let url = args[0];
+    if (!url) return message.channel.send("Hugo wants an URL UWUWUWUWUWUWUWUUWUWUWUWUW\nkill me");
 
-    if (!args[0]) return message.channel.send("Hugo wants an URL UWUWUWUWUWUWUWUUWUWUWUWUW\nkill me");
+    let validate = await ytdl.validateURL(url);
 
-    let validate = await ytdl.validateURL(args[0]);
-
-    if (!validate) return message.channel.send("Hugo needs an valid URL UWUWUWUWUUWWUUWUWUUW\nend my suffering....\nplease.");
-
-    let info = await ytdl.getInfo(args[0]);
+    if (!validate) {
+        url = await ytdl.searchYouTubeAsync(args);
+        
+    }
+    console.log(url);
+    let info = await ytdl.getInfo(url);
 
     var data = options.active.get(message.guild.id) || {};
 
@@ -25,7 +28,7 @@ module.exports.run = async (bot, message, args, options) => {
     data.queue.push({
         songTitle: info.videoDetails.title,
         user: message.author.tag,
-        url: args[0],
+        url: url,
         channel: message.channel.id
     });
     console.log(data);
