@@ -15,6 +15,7 @@ module.exports.run = async (bot, message, args, options) => {
         // url = await ytdl.searchYouTubeAsync(args);
         let vids = await yts(args.join(" "));
         console.log(vids.videos);
+        url = vids.videos[0].url;
         validate = await ytdl.validateURL(url);
         if(!validate){
             return message.channel.send("idfk what ur looooooooooooking foooooooooooooooor\nbuuuuuuuuuuuuuuuuuuuuut iiiiiiiiii caaaaaan't fiiiiiiiiiiind iiiiiiiiiit\nlumfaoxdxddxdxdxdx")
