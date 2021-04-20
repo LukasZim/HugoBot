@@ -1,5 +1,6 @@
 // const discord = require("discord.js");
 const ytdl = require("ytdl-core");
+const yts = require("yt-search");
 
 module.exports.run = async (bot, message, args, options) => {
     if (message.member.voice.channelID == null) return message.channel.send("Hugo wants to see you are in a channel uWu");
@@ -11,8 +12,13 @@ module.exports.run = async (bot, message, args, options) => {
     let validate = await ytdl.validateURL(url);
 
     if (!validate) {
-        url = await ytdl.searchYouTubeAsync(args);
-        
+        // url = await ytdl.searchYouTubeAsync(args);
+        let vids = await yts(args.join(" "));
+        console.log(vids.videos);
+        validate = await ytdl.validateURL(url);
+        if(!validate){
+            return message.channel.send("idfk what ur looooooooooooking foooooooooooooooor\nbuuuuuuuuuuuuuuuuuuuuut iiiiiiiiii caaaaaan't fiiiiiiiiiiind iiiiiiiiiit\nlumfaoxdxddxdxdxdx")
+        }
     }
     console.log(url);
     let info = await ytdl.getInfo(url);
