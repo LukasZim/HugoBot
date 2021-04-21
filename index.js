@@ -102,6 +102,8 @@ bot.on("message", async message => {
         message.react('454386727667367937');
     } else if(message.author.id == 190940343347183616){//han
         message.react('462702817795112992');
+    } else if (message.author.id == 275314097560748032){
+        message.react('834405230162345984');
     } else if(message.author.id == 137268260667260928){//ryan
         message.react('462703751078084610');
     } else {// anyone
