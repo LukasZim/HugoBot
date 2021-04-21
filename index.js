@@ -97,7 +97,7 @@ bot.on("message", async message => {
             respondToHugo(message);
         }
     } else if(message.author.id == 279652366675083264){// roman
-        message.react('553011880134705183');
+        message.react('462702257776099349');
     } else if(message.author.id == 263082569598238720){// me
         message.react('454386727667367937');
     } else if(message.author.id == 190940343347183616){//han
@@ -111,7 +111,7 @@ bot.on("message", async message => {
     }
     if (channelIdChecker(message.channel.id)) {
 
-
+279652366675083264
         return;
     } //disabled in general
     var messageArray = message.content.split(" ");
