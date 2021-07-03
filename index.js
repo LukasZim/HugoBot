@@ -234,7 +234,7 @@ function davidGreenText(hugosMessage){
 \\> open discord
 \\> think of a convoluted way in which I can relate homosexuality and falsehood to the current situation
 \\> (suck the cheeto dust off my fingers as I begin to type my masterpiece in the comment section)
-\\> comment: ${hugosMessage.replace(/\n+$/, "").replace(/\n/g, "\n>") + ""}
+\\> ${hugosMessage.replace(/\n+$/, "").replace(/\n/g, "\n\\> ") + ""}
 \\> (giggle as I imagine the intellectuals in discord chat perusing my incredibly witty and original comment)
 \\> hear my mom moan with ecstasy as Chad floods her fertile womb with his seed
 \\> it's been a good day
