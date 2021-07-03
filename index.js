@@ -97,7 +97,7 @@ bot.on("message", async message => {
     }
     if (message.author.id == 321034764268077066) {//hugo
         // message.react('783801537918926859');
-        let rand = Math.floor(Math.random() * 5)    // 20 % chance to respond to our boi
+        let rand = Math.floor(Math.random() * 10)    // 10 % chance to respond to our boi
         if(rand == 0){
             // do respond to hugo
             respondToHugo(message);
