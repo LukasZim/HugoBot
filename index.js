@@ -96,24 +96,24 @@ bot.on("message", async message => {
         }
     }
     if (message.author.id == 321034764268077066) {//hugo
-        message.react('783801537918926859');
+        // message.react('783801537918926859');
         let rand = Math.floor(Math.random() * 5)    // 20 % chance to respond to our boi
         if(rand == 0){
             // do respond to hugo
             respondToHugo(message);
         }
     } else if(message.author.id == 279652366675083264){// roman
-        message.react('462702257776099349');
+        // message.react('462702257776099349');
     } else if(message.author.id == 263082569598238720){// me
-        message.react('454386727667367937');
+        // message.react('454386727667367937');
     } else if(message.author.id == 190940343347183616){//han
-        message.react('462702817795112992');
+        // message.react('462702817795112992');
     } else if (message.author.id == 275314097560748032){
-        message.react('834405230162345984');
+        // message.react('834405230162345984');
     } else if(message.author.id == 137268260667260928){//ryan
-        message.react('462703751078084610');
+        // message.react('462703751078084610');
     } else {// anyone
-        message.react('612706488192073778');
+        // message.react('612706488192073778');
     }
     if (channelIdChecker(message.channel.id)) {
 
