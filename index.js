@@ -89,6 +89,9 @@ bot.on("message", async message => {
         message.channel.send("houd je kk bek tering bot, hopelijk sterf je aan parkinsons")
         return;
     }
+    if (message.author.id == 275314097560748032){
+        message.channel.send(davidGreenText(message.content));
+    }
     if (message.author.id == 321034764268077066) {//hugo
         message.react('783801537918926859');
         let rand = Math.floor(Math.random() * 5)    // 20 % chance to respond to our boi
@@ -220,6 +223,27 @@ function respondToHugoText(message){
     }
 
 }
+
+function davidGreenText(hugosMessage){
+    let text = `
+                > be me
+                > get home from my vasectomy
+                > hear mom moaning and slapping sounds coming from parent's room
+                > must be Chad again
+                > know they would want privacy, sit down at my computer
+                > open discord
+                > think of a convoluted way in which I can relate homosexuality and falsehood to the current situation
+                (> suck the cheeto dust off my fingers as I begin to type my masterpiece in the comment section)
+                > ${hugosMessage.replace(/\n+$/, "").replace(/\n/g, "\n>") + ""}
+                (> giggle as I imagine the intellectuals in discord chat perusing my incredibly witty and original comment)
+                > hear my mom moan with ecstasy as Chad floods her fertile womb with his seed
+                > it's been a good day
+                > i'll get lots of attention for my impressive contribution to internet culture, and Chad might even let me eat his cum out of my wife's pussy if he finds my comment funny enough
+                
+                `;
+                return text;
+    }
+
 
 function respondToHugo(message){
     // let index = Math.floor(Math.random() * responses.length);
